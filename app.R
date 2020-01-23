@@ -10,7 +10,6 @@
 library(shiny)
 library(fda)
 
-# Thanks to: https://stackoverflow.com/questions/30502870/shiny-slider-on-logarithmic-scale
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
@@ -35,7 +34,8 @@ ui <- fluidPage(
                         "Order:",
                         min = 1,
                         max = 5,
-                        value = 3)
+                        value = 3), 
+            helpText("Fork code on github: https://github.com/jmsigner/splines")
         ),
 
         # Show a plot of the generated distribution
